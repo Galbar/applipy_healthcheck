@@ -1,6 +1,6 @@
 __all__ = [
-    'MetricsWrapper',
-    'PrometheusModule',
+    'HealthCheckModule',
+    'HealthChecker',
 ]
 
 
