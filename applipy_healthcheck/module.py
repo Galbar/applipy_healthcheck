@@ -12,7 +12,8 @@ class HealthCheckModule(Module):
     def configure(self, bind, register) -> None:
         bind(Endpoint, HealthCheckEndpoint, name='healthcheck')
         bind(PathFormatter, name='healthcheck')
-        bind(with_names(Api, 'healthcheck'), name=self._config.get('server_name', None))
+        bind(with_names(Api, 'healthcheck'),
+             name=self._config.get('server_name', None))
 
     @classmethod
     def depends_on(cls):

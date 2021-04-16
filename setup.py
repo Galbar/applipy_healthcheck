@@ -22,9 +22,8 @@ setup(
         'Development Status :: 5 - Production/Stable',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: Apache Software License',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
         'Topic :: Software Development :: Libraries',
     ],
     description='Exposes an http endpoint exposing the health status of the app',
@@ -36,9 +35,9 @@ setup(
     version=version,
     packages=find_packages(exclude=['doc', 'tests']),
     data_files=[],
-    python_requires='>=3.6',
+    python_requires='>=3.8',
     install_requires=[
-        'applipy_http>=1.0.0,<2.0.0',
+        'applipy_http>=2.0.0,<3.0.0',
     ],
     scripts=[],
 )

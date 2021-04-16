@@ -26,10 +26,10 @@ app:
     modules:
         - applipy_healthcheck.HealthCheckModule
 
-http:
-    internal:
-        host: 0.0.0.0
-        port: 8080
+http.servers:
+- name: internal
+  host: 0.0.0.0
+  port: 8080
 
 healthcheck.server_name: internal
 ```
@@ -95,7 +95,7 @@ app:
   name: test
   modules: [mymodule.MyModule]
 
-http:
-  host: 0.0.0.0
+http.servers:
+- host: 0.0.0.0
   port: 8080
 ```
